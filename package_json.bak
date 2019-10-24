@@ -1,22 +1,26 @@
 {
-   "name": "kabel-my",
-   "productName": "kabel-my",
-   "version": "1.0.0",
-   "description": "My Electron application description",
-   "main": "src/index.js",
-   "scripts": {
+  "name": "kabel-my",
+  "productName": "kabel-my",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+
       "ng": "ng",
       "start": "ng serve",
       "build": "ng build",
       "test": "ng test",
       "lint": "ng lint",
       "e2e": "ng e2e"
-   },
-   "license": "MIT",
-   "config": {
+
+  },
+  "license": "MIT",
+  "config": {
+
       "forge": {
          "packagerConfig": {},
          "makers": [
+
             {
                "name": "@electron-forge/maker-squirrel",
                "config": {
@@ -37,11 +41,14 @@
                "name": "@electron-forge/maker-rpm",
                "config": {}
             }
+
          ]
       }
-   },
-   "private": true,
-   "dependencies": {
+
+  },
+  "private": true,
+  "dependencies": {
+
       "@angular/animations": "~8.2.12",
       "@angular/cdk": "~8.2.3",
       "@angular/common": "~8.2.12",
@@ -57,22 +64,24 @@
       "rxjs": "~6.5.3",
       "tslib": "^1.9.0",
       "zone.js": "~0.9.1"
-   },
-   "devDependencies": {
-      "@angular-devkit/build-angular": "^0.803.14",
-      "@angular/cli": "~8.3.14",
-      "@angular/compiler-cli": "~8.2.12",
-      "@angular/language-service": "~8.2.12",
+
+  },
+  "devDependencies": {
+
       "@electron-forge/cli": "^6.0.0-beta.45",
       "@electron-forge/maker-deb": "^6.0.0-beta.45",
       "@electron-forge/maker-rpm": "^6.0.0-beta.45",
       "@electron-forge/maker-squirrel": "^6.0.0-beta.45",
       "@electron-forge/maker-zip": "^6.0.0-beta.45",
+      "electron": "7.0.0",
+      "@angular-devkit/build-angular": "~0.803.14",
+      "@angular/cli": "~8.3.14",
+      "@angular/compiler-cli": "~8.2.12",
+      "@angular/language-service": "~8.2.12",
+      "@types/node": "~8.9.4",
       "@types/jasmine": "~3.3.8",
       "@types/jasminewd2": "~2.0.3",
-      "@types/node": "~8.9.4",
       "codelyzer": "^5.0.0",
-      "electron": "7.0.0",
       "jasmine-core": "~3.4.0",
       "jasmine-spec-reporter": "~4.2.1",
       "karma": "~4.1.0",
@@ -84,5 +93,6 @@
       "ts-node": "~7.0.0",
       "tslint": "~5.15.0",
       "typescript": "~3.5.3"
-   }
+
+  }
 }

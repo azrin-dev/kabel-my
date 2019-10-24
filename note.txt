@@ -1,0 +1,21 @@
+ERROR in ./src/main.ts
+
+Module build failed (from ./node_modules/@ngtools/webpack/src/index.js):
+
+Error: /home/azrin/Documents/GitHub/kabel-my/src/main.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at AngularCompilerPlugin.getCompiledFile (/home/azrin/Documents/GitHub/kabel-my/node_modules/@ngtools/webpack/src/angular_compiler_plugin.js:838:23)
+    at /home/azrin/Documents/GitHub/kabel-my/node_modules/@ngtools/webpack/src/loader.js:41:31
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+
+
+
+
+
+
+ERROR in ./src/polyfills.ts
+Module build failed (from ./node_modules/@ngtools/webpack/src/index.js):
+
+Error: /home/azrin/Documents/GitHub/kabel-my/src/polyfills.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.
+    at AngularCompilerPlugin.getCompiledFile (/home/azrin/Documents/GitHub/kabel-my/node_modules/@ngtools/webpack/src/angular_compiler_plugin.js:838:23)
+    at /home/azrin/Documents/GitHub/kabel-my/node_modules/@ngtools/webpack/src/loader.js:41:31
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
