@@ -24,7 +24,7 @@ app.set('view engine', 'pug');
 const api = require('./server/routes/api');
 
 // serves up static files from the public folder. Anything in public/ will just be served up as the file it is
-app.use(express.static(path.join(__dirname, 'dist/azrin-dev/')));
+app.use(express.static(path.join(__dirname, 'dist/kabel-my/')));
 
 // Return other routes to Angular index file
 // app.get('*', (req, res) => {

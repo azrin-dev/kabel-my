@@ -3,8 +3,9 @@
    "productName": "kabel-my",
    "version": "1.0.0",
    "description": "My Electron application description",
-   "main": "src/index.js",
+   "main": "dist/electron",
    "scripts": {
+      
       "ng": "ng",
       "start": "ng serve",
       "build": "ng build",
