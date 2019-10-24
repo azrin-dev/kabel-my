@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": []
+  },
+  "include": [
+    "./app/*.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "./app/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": true
+  }
+}
