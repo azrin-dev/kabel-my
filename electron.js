@@ -17,7 +17,7 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/src/app/menu/menu-sidenav/menu-sidenav.component.html`);
+  mainWindow.loadURL(`file://${__dirname}/src/app/navigations/nav-sidenav/nav-sidenav.component.html`);
 
   // Open the DevTools.
 //   mainWindow.webContents.openDevTools();

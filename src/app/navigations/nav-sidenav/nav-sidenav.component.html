@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+
+   <mat-sidenav #drawer class="sidenav">
+      <mat-toolbar>Menu</mat-toolbar>
+      
+      <!-- Menu List  -->
+      <mat-list class="lm__menu-list" *ngIf="pages">
+         <mat-list-item *ngFor="let page of pages" routerLink="{{ page.path }}">
+            <mat-icon class="lm__menu-list-icon" color="accent">{{ page.data.icon }}</mat-icon>
+            {{ page.data.name }}
+         </mat-list-item>
+      </mat-list>
+
+   </mat-sidenav>
+
+   <mat-sidenav-content>
+
+      <mat-toolbar color="primary">
+         <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+         >
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+         </button>
+         <span>kabel-my</span>
+      </mat-toolbar>
+
+      <!-- Pages  -->
+      <router-outlet></router-outlet>
+
+   </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+

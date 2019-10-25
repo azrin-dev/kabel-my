@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+// Material
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 // Component
 import { HomeComponent } from './home/home.component';
-import { MenuSidenavComponent } from './menu/menu-sidenav/menu-sidenav.component';
+import { NavSidenavComponent } from './navigations/nav-sidenav/nav-sidenav.component';
 
 
 @NgModule({
@@ -15,13 +17,15 @@ import { MenuSidenavComponent } from './menu/menu-sidenav/menu-sidenav.component
    declarations: [
       AppComponent,
       HomeComponent,
-      MenuSidenavComponent
+      NavSidenavComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       BrowserAnimationsModule,
-      MaterialModule 
+      // Material 
+      MatListModule,
+      MatSidenavModule
    ],
    providers: [],
    bootstrap: [AppComponent]
